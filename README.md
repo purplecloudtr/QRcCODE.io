@@ -1,1 +1,2 @@
 # QRcCODE.io
+google.com, pub-8619548855629890, DIRECT, f08c47fec0942fa0
