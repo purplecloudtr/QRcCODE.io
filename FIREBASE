@@ -1,0 +1,225 @@
+########################################################################################################################
+     Welcome to...
+   ######## #### ########  ######## ########     ###     ######  ########  ##
+   ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##        ##
+   ######    ##  ########  ######   ########  #########  ######  ######    ##
+   ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+   ##       #### ##     ## ######## ########  ##     ##  ######  ########  ##
+
+
+########################################################################################################################
+~ Let's make sure your Firebase CLI is ready...
+~ Looks like your CLI needs to be set up.
+
+~ This may take a moment
++ Alright, your CLI is set up!
+
+~ Looks like you're not authenticated. Let's log in!
+i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+? Allow Firebase to collect CLI usage and error reporting information? Yes
+i  To change your data collection preference at any time, run `firebase logout` and log in again.
+
+Visit this URL on this device to log in:
+https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=878135413&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+
+Waiting for authentication...
+
++  Success! Logged in as purplecloudtr@gmail.com
+
++ You can now use the 'firebase' or 'npm' commands!
+~ For more help see https://firebase.google.com/docs/cli/
+
+------------------------------------------------------------------------------------------------------------------------
+
+> firebase projects:list
+√ Preparing the list of your Firebase projects
+┌────────────────────────────────┬──────────────────────────┬────────────────┬──────────────────────┐
+│ Project Display Name           │ Project ID               │ Project Number │ Resource Location ID │
+├────────────────────────────────┼──────────────────────────┼────────────────┼──────────────────────┤
+│ httpssitesgooglecomviewqrckodg │ httpssitescomviewqrckodg │ 193260234444   │ [Not specified]      │
+├────────────────────────────────┼──────────────────────────┼────────────────┼──────────────────────┤
+│ Musichall                      │ musichall-6f568          │ 657692409977   │ europe-west          │
+├────────────────────────────────┼──────────────────────────┼────────────────┼──────────────────────┤
+│ DURACK                         │ qrccode-c50d1            │ 632940702421   │ us-central           │
+├────────────────────────────────┼──────────────────────────┼────────────────┼──────────────────────┤
+│ QRcCODE                        │ qrccode-d6282            │ 785129909475   │ [Not specified]      │
+└────────────────────────────────┴──────────────────────────┴────────────────┴──────────────────────┘
+
+4 project(s) total.
+
+> firebase login
+Already logged in as purplecloudtr@gmail.com
+
+> firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ASUS\Downloads
+
+? Are you ready to proceed? Yes
+? Which Firebase CLI features do you want to set up for this folder? Press Space to select features, then Enter to confirm your choices. Hosting: Configure and deploy Fireb
+ase Hosting sites
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: qrccode-d6282 (QRcCODE)
+i  Using project qrccode-d6282 (QRcCODE)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? QRcCODE
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? Yes
++  Wrote QRcCODE/index.html
+
+i  Didn't detect a .git folder. Assuming C:\Users\ASUS\Downloads is the project root.
+i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store.
+
+Visit this URL on this device to log in:
+https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=950684568&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+
+Waiting for authentication...
+
++  Success! Logged into GitHub as purplecloudtr
+
+? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) purplecloudtr/QRcCODE.io
+
++  Created service account github-action-312908678 with Firebase Hosting admin permissions.
+| Uploading service account secrets to repository: purplecloudtr/QRcCODE.io
+Error: Failed to make request to https://api.github.com/repos/purplecloudtr/QRcCODE.io/actions/secrets/FIREBASE_SERVICE_ACCOUNT_QRCCODE_D6282
+- Uploading service account secrets to repository: purplecloudtr/QRcCODE.io
+> npm i -g firebase-tools@8.15.0
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+C:\Users\ASUS\.cache\firebase\tools\firebase -> C:\Users\ASUS\.cache\firebase\tools\node_modules\firebase-tools\lib\bin\firebase.js
+
+> re2@1.15.9 install C:\Users\ASUS\.cache\firebase\tools\node_modules\firebase-tools\node_modules\re2
+> install-from-cache --artifact build/Release/re2.node --host-var RE2_DOWNLOAD_MIRROR || npm run rebuild
+
+Trying https://github.com/uhop/node-re2/releases/download/1.15.9/win32-x64-72.br ...
+Writing to build/Release/re2.node ...
+Done.
+
+> protobufjs@6.10.2 postinstall C:\Users\ASUS\.cache\firebase\tools\node_modules\firebase-tools\node_modules\protobufjs
+> node scripts/postinstall
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.3.1 (node_modules\firebase-tools\node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ firebase-tools@8.15.0
+added 597 packages from 374 contributors in 782.001s
+
+>
+> firebase init hosting:githufirebase init hosting:github
+
+> firebase init hosting
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ASUS\Downloads
+
+? Are you ready to proceed? Yes
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: qrccode-d6282 (QRcCODE)
+i  Using project qrccode-d6282 (QRcCODE)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory?
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? Yes
++  Wrote /index.html
+
+i  Didn't detect a .git folder. Assuming C:\Users\ASUS\Downloads is the project root.
+i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store.
+
+Visit this URL on this device to log in:
+https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=624300098&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+
+Waiting for authentication...
+
++  Success! Logged into GitHub as purplecloudtr
+
+? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) purplecloudtr/QRcCODE.io
+
++  Created service account github-action-312908678 with Firebase Hosting admin permissions.
++  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_QRCCODE_D6282.
+i  You can manage your secrets at https://github.com/purplecloudtr/QRcCODE.io/settings/secrets.
+
+? Set up the workflow to run a build script before every deploy? No
+
++  Created workflow file C:\Users\ASUS\Downloads\.github/workflows/firebase-hosting-pull-request.yml
+? Set up automatic deployment to your site's live channel when a PR is merged? (Y/n) Y
+? Set up automatic deployment to your site's live channel when a PR is merged? No
+
+i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App:
+https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+i  Action required: Push any new workflow file(s) to your repo
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+i  Writing gitignore file to .gitignore...
+
++  Firebase initialization complete!
+
+>
+> firebase deploy
+
+=== Deploying to 'qrccode-d6282'...
+
+i  deploying hosting
+
+Error: Must supply a public directory using "public" in each "hosting" config.
+
+> firebase emulators:start
+i  emulators: Starting emulators: hosting
++  hosting: Local server: http://localhost:5000
+!  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag.
+
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+
